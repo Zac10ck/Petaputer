@@ -1,3476 +1,1082 @@
-<html>
+<!DOCTYPE html>
+<!-- Built on Frappe. https://frappe.io/ -->
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="generator" content="frappe">
 
-<body>
+	
+		
+	
+
+	<title>Open Source Accounting Software – ERPNext</title>
+
+	
+	<link
+		rel="shortcut icon"
+		href="assets/erpnext_com/img/erpnext-logo-blue.png"
+		type="image/x-icon"
+	>
+	<link href="assets/css/frappe-theme-bs4.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="assets/frappe_theme/css/github.css">
+	<style>
+		h6 {
+	font-weight: 600;
+}
+
+.navbar {
+/*	background-color: #5e64ff !important;
+*/}
+
+.form-horizontal-group {
+	display: flex;
+	justify-content: space-between
+}
+
+.form-horizontal-group .form-group{
+	flex: 1;
+}
+
+.level {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.subscription-box {
+	border: 1px solid #cdd4d9;
+	border-radius: 3px;
+	background: #fafbfc;
+	padding: 15px;
+}
+
+.stage {
+	z-index: 1;
+}
+
+.stage-names {
+	margin-bottom: 2rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.stage-name {
+	width: 6rem;
+}
+
+.stage::after {
+	content: '';
+	display: inline-block;
+	height: 1.5rem;
+	width: 1.5rem;
+	border-radius: 0.75rem;
+	background: #e1e7eb;
+}
+
+.stage.completed::after {
+	border: 5px solid #e1e7eb;
+	background: #615fff;
+}
+
+.stage-container {
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+}
+
+.stage-line {
+	position: absolute;
+	height: 5px;
+	min-width: 70%;
+	top: 9px;
+	background: #e1e7eb;
+}
+
+.staged-form {
+	padding: 2rem 0rem 5rem 0rem;
+	margin-top: 2rem;
+}
+
+.text-extra-muted {
+	color: #d1d8dd !important;
+}
+
+.form-group {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.hero-and-content {
+	background-color: #f5f7fa;
+}
+
+[data-html-block="header"] {
+	text-align: center;
+}
+
+.help-block {
+	margin-bottom: 5px;
+}
+
+.availability-status i, .availability-spinner i {
+	margin: 5px;
+	font-size: 16px;
+}
+
+.validation-message {
+	display: none;
+	margin-top: 0px;
+	position: absolute;
+}
+
+.invalid .validation-message{
+	color: #ffad58;
+	display: inherit;
+}
+
+.invalid input {
+	border-color: #ffad58;
+	background-color: #fffdf4;
+}
+
+/* Disable signup footer message for web forms */
+div[data-doctype="Web Form"] + section.footer-message,
+div#page-login + section.footer-message,
+div#page-message + section.footer-message,
+body[data-path="me"] > section.footer-message {
+	display: none;
+}
+	</style>
+	<!-- for indexing -->
+<meta name="google-site-verification" content="pY8RgHujc1s-KwOQZBldPi1bH5BOZfZBf8cP3oEUc4I" /> 
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WL6VS46');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Global site tag (gtag.js) - Google Ads: 1032834481 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1032834481"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1032834481');
+</script>
+<style>
+.navbar {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+@media (max-width: 768px) {
+    .page-content-wrapper {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+</style>
+<link rel='stylesheet' href="assets/central/css/feature_page.css">
+<meta property="og:site_name" content="ERPNext">
 
 
-    <section role="main" class="main-container container">
-        <div class="main-content-container js-main-content-container">
-            
-<section class="js-main-header-revenue-wrapper">
 
 
-<div class="ads no-mobile is-top-margin u-hidden  " data-placeholder="stripe_mid">
+	<meta itemprop="name" content="Open Source Accounting Software – ERPNext ">
+	<meta name="title" content="Open Source Accounting Software – ERPNext ">
+	<meta name="twitter:title" content="Open Source Accounting Software – ERPNext ">
+	<meta property="og:title" content="Open Source Accounting Software – ERPNext ">
+	<meta name="twitter:image:alt" content="Open Source Accounting Software – ERPNext ">
 
-<div id="sln-hbanner" class="ads-billboard">
-    <button id="theBigX" class="button-icon close-button" aria-label="close ad" style="display: none;">
-    <span class="icon-close" aria-hidden="true"></span>
-</button>
-<div class="u-hidden" id="div-gpt-ad-1441189641022-14" style="height:250px; display: none;"></div>
-<div class="u-hidden" id="div-gpt-ad-1370187203350-head1" style="height:90px;"></div>
-</div>
+
+
+	<meta itemprop="description" content="ERPNext's open source accounting software simplifies the entire accounting process. Bookkeeping, invoicing & reconciliations — all available free and open source.">
+	<meta name="twitter:description" content="ERPNext's open source accounting software simplifies the entire accounting process. Bookkeeping, invoicing & reconciliations — all available free and open source.">
+	<meta name="description" content="ERPNext's open source accounting software simplifies the entire accounting process. Bookkeeping, invoicing & reconciliations — all available free and open source.">
+	<meta property="og:description" content="ERPNext's open source accounting software simplifies the entire accounting process. Bookkeeping, invoicing & reconciliations — all available free and open source.">
+
+
+
+
 
 <script>
-(window.hfuhfurjshdkud || window.jf9e8uhjfu8)('dw8dkas9efy9', [
-    'div-gpt-ad-1441189641022-14',
-    'div-gpt-ad-1370187203350-head1',
-    'ad_opt',
-    '/6938/FP_IN_site/FP_IN_Billboard_Default',
-    '/6938/FP_IN_site/FP_IN_Leaderboard_Default',
-    '56',
-    'true']);
-</script>
-</div>
+		window.frappe = {};
+		frappe.ready_events = [];
+		frappe.ready = function(fn) {
+			frappe.ready_events.push(fn);
+		}
+		window.dev_server = 0;
+		window.socketio_port = 9000;
+	</script>
+</head>
+<body frappe-session-status="logged-out" data-path="open-source-accounting">
 
-<div class="ads only-mobile is-btn u-hidden  " data-placeholder="m_btn_quotestable_top">
-<div class="start-trading-wrapper">
-<a class="start-trading green" rel="nofollow" target="_blank" href="/jp.php?v2=MnI1azViNm81am9qZTYwNDFiZjoxMzM1MiUzYWRuMH5lIWRjNGY_b2JrbW5nKWZ-MHI3OmYzN2YxNm9gMDRkNjIhNSU1bjZ8NSNvbg==" data-outbound="">
-    <div class="start-trading-button" data-tradenowid="334317">Start Trading</div>
-</a>
+		
+	
 
-    <p class="start-trading-text">AD | your capital is at risk</p>
+<style>
+	.navbar .dropdown-toggle::after {
+		display: none;
+	}
 
-</div>
+	.indicator::before {
+		margin: 0 0.1rem 0.11rem 0px;
+	}
+</style>
 
-</div>
-</section>
+<nav class="navbar navbar-expand-lg navbar-light mainnav">
+	<div class="container">
+		<a class="navbar-brand" href="index.html">
+			
+			<img class="d-inline-block align-top" src="assets/erpnext_com/img/erpnext-logo.svg">
+			
+			<span>ERPNext</span>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-            <header class="js-section-header"><div class="inner-header">
-<div class="inner-header-top">
-    
-        
-<nav class="breadcrumbs">
-<ol class="breadcrumbs-list">
-    
-        <li class="breadcrumbs-item">
-            <a href="/markets/">
-                <span>Markets</span>
-            </a>
-        </li>
-    
-        <li class="breadcrumbs-item">
-            <a href="/indices/">
-                <span>Indices</span>
-            </a>
-        </li>
-    
-    <li class="breadcrumbs-item active">
-        <span>Major Indices</span>
-    </li>
-</ol>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto mt-4 mt-lg-0">
+
+	<li class="nav-item dropdown w-100">
+		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+			data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Solutions
+		</a>
+		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			
+			<a class="dropdown-item small" href="open-source-services-erp-software.html" >
+				Services</a>
+			
+			<a class="dropdown-item small" href="open-source-manufacturing-erp-software.html" >
+				Manufacturing</a>
+			
+			<a class="dropdown-item small" href="open-source-retail-erp-software.html" >
+				Retail</a>
+			
+			<a class="dropdown-item small" href="open-source-distribution-erp-software.html" >
+				Distribution</a>
+			
+			<a class="dropdown-item small" href="open-source-education.html" >
+				Education</a>
+			
+			<a class="dropdown-item small" href="open-source-ngo-erp-software.html" >
+				Non Profit</a>
+			
+			<a class="dropdown-item small" href="open-source-agriculture-erp-software.html" >
+				Agriculture</a>
+			
+			<a class="dropdown-item small" href="open-source-healthcare.html" >
+				Healthcare</a>
+			
+			<a class="dropdown-item small" href="regional.html" >
+				Regional</a>
+			
+			<a class="dropdown-item small" href="whitepapers.html" >
+				Whitepapers</a>
+			
+		</div>
+	<li>
+
+
+				
+
+	<li class="nav-item ">
+		<a class="nav-link " style="" 
+		href="pricing.html"
+			 data-navbar-label="Pricing">
+			Pricing
+		</a>
+	</li>
+
+
+				
+
+	<li class="nav-item dropdown w-100">
+		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+			data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Services
+		</a>
+		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			
+			<a class="dropdown-item small" href="support.html" >
+				Support</a>
+			
+			<a class="dropdown-item small" href="enterprise.html" >
+				Enterprise</a>
+			
+			<a class="dropdown-item small" href="contact-form.html" >
+				Contact Sales</a>
+			
+		</div>
+	<li>
+
+
+				
+
+	<li class="nav-item dropdown w-100">
+		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+			data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Partners
+		</a>
+		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			
+			<a class="dropdown-item small" href="partners.html" >
+				Partner Listing</a>
+			
+			<a class="dropdown-item small" href="https://erpnext.com/partners/plans" >
+				Become a Partner</a>
+			
+			<a class="dropdown-item small" href="login.html" >
+				Partner Login</a>
+			
+		</div>
+	<li>
+
+
+				
+			</ul>
+			<ul class="navbar-nav ml-auto justify-content-end">
+
+	<li class="nav-item ">
+		<a class="nav-link " style="" 
+		href="signup6a32.html?plan=Cloud-2020"
+			 data-navbar-label="Sign Up">
+			Sign Up
+		</a>
+	</li>
+
+
+				
+
+	<li class="nav-item d-flex">
+		<a class="btn btn-sm btn-secondary align-self-sm-center " style="" 
+		href="contact-form.html"
+			 data-navbar-label="Contact Us">
+			Contact Us
+		</a>
+	</li>
+
+
+				
+				<!-- post login tools -->
+
+<li class="nav-item dropdown logged-in" id="website-post-login"
+	data-label="website-post-login" style="display: none">
+	<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+		<span class="user-image-wrapper"></span>
+		<span class="full-name"></span>
+		<b class="caret"></b>
+	</a>
+	<div class="dropdown-menu" role="menu"><a class="dropdown-item" href="me.html" 
+					rel="nofollow">
+					My Account
+				</a><a class="dropdown-item" href="indexb0e2.html?cmd=web_logout" 
+					rel="nofollow">
+					Logout
+				</a><a class="dropdown-item" href="desk.html">Switch To Desk</a>
+	</div>
+</li>
+
+
+			</ul>
+		</div>
 </nav>
-        <section class="main-title-wrapper with-country-select js-main-title-wrapper">
-            <h1 class="main-title js-main-title">
-                Major Global Indices
-            </h1>
-            
-            <ul class="more-info">
-                <li class="more-info-item">
-                    
-                </li>
-                <li class="more-info-item">
-                    
-<ul class="more-info">
-<li class="more-info-item help popup-wrapper is-hovered">
-    <button class="common-link-button e-info-popup-opener js-info-popup-opener">
-        <span class="icon-info1" aria-hidden="true"></span>
-    </button>
-    <div class="popup e-info-popup js-info-popup">
-        <div class="popup-content">
-            This page features major global indices traded in the UK and around the world. In addition to real-time prices, the table provides the high and low prices that in index traded at for the trading day in an easy to read format. Click on the name of the index of your choice to reveal its price and chart, in addition to relevant news and technical analysis.
-        </div>
-    </div>
-</li>
-</ul>
-                </li>
-            </ul>
-        </section>
-    
-    <div class="wildcard">
-        <div class="promo-box">
-            
-
-<div class="ads no-mobile u-margin-top-auto is-btn  " data-placeholder="btn_quotestable">
-<div class="start-trading-wrapper">
-<a class="start-trading red" rel="nofollow" target="_blank" href="/jp.php?v2=OXk3aTFmYjsxbm1oZzRmYjNgNWlmZGFnYXZhM2NpbyFkIGZhZjQ2ZmZva2g1e2N7MXM-M2E1NmZlb2dpNTdmMzkqNycxamIoMSdtbA==" data-outbound="">
-    <div class="start-trading-button" data-tradenowid="229270">Start Trading</div>
-</a>
-
-    <p class="start-trading-text">AD | your capital is at risk</p>
-
-</div>
-
-</div>
-        </div>
-    </div>
-</div>
-</div>
-
-<div class="common-nav-wrapper">
-<nav class="common-nav  js-header-tabs-wrapper">
-    <ul class="common-nav-list">
-        
-
-<li class="common-nav-item js-header-tab">
-
-    <a href="/indices/major-indices" class=" selected js-main-navigation-link js-tab-li-link" data-hold-pos=""><span class="text js-tab-li-text">Major</span></a>
-
-</li>
-
-<li class="common-nav-item js-header-tab">
-
-    <a href="/indices/world-indices" class=" js-main-navigation-link js-tab-li-link" data-hold-pos=""><span class="text js-tab-li-text">World</span></a>
-
-</li>
-
-<li class="common-nav-item js-header-tab">
-
-    <a href="/indices/global-indices" class=" js-main-navigation-link js-tab-li-link" data-hold-pos=""><span class="text js-tab-li-text">Global</span></a>
-
-</li>
-
-
-    </ul>
-    
-        <div class="common-nav-item popup-wrapper no-mobile u-visibility-hidden js-more-tabs-popup-wrapper">
-            <button class="js-more-tabs-button">
-                <span class="text">More</span>
-                <span class="icon-arrow" aria-hidden="true"></span>
-            </button>
-            <div class="popup is-auto-width e-more-popup hide js-page-tabs-more-popup">
-                <div class="popup-content">
-                    <div class="popup-scroller">
-                        <ul class="common-list js-more-tabs">
-                            
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-
-</nav>
-</div>
-
-<section class="table-nav common-section">
-<div class="start-side">
-    
-<nav class="e-custom-views-nav js-custom-views-wrapper" data-table-type-id="1">
-<div class="button-tabs">
-    <ul class="button-tabs-list e-table-views-tabs js-tabs-ul js-table-views-tabs">
-        
-            <li class="button-tabs-item from-break2 js-table-views-tab">
-                
-                
-                    <button class="js-navigation-link button-tabs-button selected" data-id="price">Price</button>
-                
-            </li>
-        
-            <li class="button-tabs-item from-break2 js-table-views-tab">
-                
-                
-                    <a data-hold-pos="" href="/indices/major-indices/performance" class="js-navigation-link button-tabs-button" data-id="performance">Performance</a>
-                
-            </li>
-        
-            <li class="button-tabs-item from-break2 js-table-views-tab">
-                
-                
-                    <a data-hold-pos="" href="/indices/major-indices/technical" class="js-navigation-link button-tabs-button" data-id="technical">Technical</a>
-                
-            </li>
-        
-        
-            <li class="only-break1">
-                    <div class="js-standalone-popup-wrapper show-more-tabs design-select">
-                        <button class="select js-standalone-popup-opener">
-                            <span class="text">Price</span>
-                            <div class="icon-arrow" aria-hidden="true"></div>
-                        </button>
-                        <div class="popup js-standalone-popup hide">
-                            <!-- This popup has only price Performance and Technical and a create new that passes you to login-->
-                            <header class="popup-header">
-                                <h2 class="popup-header-title">Change view</h2>
-                                <button class="button-icon close-button" aria-label="close">
-                                    <span class="icon-close" aria-hidden="true"></span>
-                                </button>
-                            </header>
-                            <div class="popup-content">
-                                <div class="popup-scroller">
-                                    <ul class="common-list js-table-views-outcast-tabs">
-                                        
-                                            <li class="js-table-views-outcast-tab common-list-item not-editable  selected " data-id="price">
-                                                <div class="common-list-item-wrapper">
-                                                    <div class="text">
-                                                        
-                                                            <span class="js-no-link-tab-label">Price</span>
-                                                        
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        
-                                            <li class="js-table-views-outcast-tab common-list-item not-editable " data-id="performance">
-                                                <div class="common-list-item-wrapper">
-                                                    <div class="text">
-                                                        
-                                                            <a class="js-navigation-link" href="/indices/major-indices/performance" data-hold-pos="">Performance</a>
-                                                        
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        
-                                            <li class="js-table-views-outcast-tab common-list-item not-editable " data-id="technical">
-                                                <div class="common-list-item-wrapper">
-                                                    <div class="text">
-                                                        
-                                                            <a class="js-navigation-link" href="/indices/major-indices/technical" data-hold-pos="">Technical</a>
-                                                        
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="popup-footer u-no-padding">
-                                <button class="common-link-button popup-footer-button js-create-custom-view" aria-label="add new" data-id="15" type="button">
-                                    <span class="icon-add" aria-hidden="true"></span>
-                                    <span class="text">Create New</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-            </li>
-        
-        <!-- original LI with native select - leaving it here because removing it breaks the JS-->
-
-    </ul>
-    
-    <!-- Custom Views- Start -->
-    <div class="e-custom-views js-create-custom-view-popup hide" tabindex="0">
-<!--</header>-->
-<header class="popup-header name only-break1">
-    <button class="button-icon back-icon js-close-modal">
-        <span class="icon-arrow_back" aria-label="back" aria-hidden="true"></span>
-    </button>
-    <div class="popup-header-title" role="heading" aria-level="3">Custom View</div>
-    <p class="e-custom-views-summary-line">
-        <span class="highlight js-summary-counter-selected"></span>
-        <span class="text">From</span>
-        <span class="highlight js-summary-counter-max"></span>
-    </p>
-</header>
-<!--</table name>-->
-<header class="popup-header">
-    <button class="button-icon close-button no-mobile js-close-modal" aria-label="close this">
-        <span class="icon-close" aria-label="close this" aria-hidden="true"></span>
-    </button>
-    <input type="text" placeholder="Enter Custom View Name" class="js-multilist-title common-title" required="">
-</header>
-<!--</content>-->
-
-<section class="popup-content is-readonly js-multilist-wrapper">
-    <!--</column select>-->
-    <section class="e-custom-views-select js-multilist-step1">
-        <div class="search type-2">
-            <span class="icon-search" aria-hidden="true"></span>
-            <input type="search" placeholder="Search Columns" aria-label="Search Columns">
-        </div>
-
-        <div class="popup-scroller">
-        
-        <section class="e-custom-views-section">
-            <div class="common-title" role="heading" aria-level="4">Price</div>
-            <ul class="common-list">
-                
-                    <li class="common-list-item js-multilist-item" data-item="Last">
-                        <label>
-                            <input type="checkbox" value="4">
-                            <span class="text">Last</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="Open">
-                        <label>
-                            <input type="checkbox" value="3">
-                            <span class="text">Open</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="High">
-                        <label>
-                            <input type="checkbox" value="6">
-                            <span class="text">High</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="Low">
-                        <label>
-                            <input type="checkbox" value="7">
-                            <span class="text">Low</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="Prev. Close">
-                        <label>
-                            <input type="checkbox" value="8">
-                            <span class="text">Prev. Close</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="Chg%">
-                        <label>
-                            <input type="checkbox" value="10">
-                            <span class="text">Chg%</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="Chg">
-                        <label>
-                            <input type="checkbox" value="9">
-                            <span class="text">Chg</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="Time">
-                        <label>
-                            <input type="checkbox" value="11">
-                            <span class="text">Time</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="Volume">
-                        <label>
-                            <input type="checkbox" value="34">
-                            <span class="text">Volume</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="52 Week High">
-                        <label>
-                            <input type="checkbox" value="35">
-                            <span class="text">52 Week High</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="52 Week Low">
-                        <label>
-                            <input type="checkbox" value="36">
-                            <span class="text">52 Week Low</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="1 Year">
-                        <label>
-                            <input type="checkbox" value="37">
-                            <span class="text">1 Year</span>
-                        </label>
-                    </li>
-                
-            </ul>
-        </section>
-        
-        <section class="e-custom-views-section">
-            <div class="common-title" role="heading" aria-level="4">Performance</div>
-            <ul class="common-list">
-                
-                    <li class="common-list-item js-multilist-item" data-item="Daily">
-                        <label>
-                            <input type="checkbox" value="12">
-                            <span class="text">Daily</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="1 Week">
-                        <label>
-                            <input type="checkbox" value="13">
-                            <span class="text">1 Week</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="1 Month">
-                        <label>
-                            <input type="checkbox" value="14">
-                            <span class="text">1 Month</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="YTD">
-                        <label>
-                            <input type="checkbox" value="15">
-                            <span class="text">YTD</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="1 Year">
-                        <label>
-                            <input type="checkbox" value="16">
-                            <span class="text">1 Year</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="3 years">
-                        <label>
-                            <input type="checkbox" value="17">
-                            <span class="text">3 years</span>
-                        </label>
-                    </li>
-                
-            </ul>
-        </section>
-        
-        <section class="e-custom-views-section">
-            <div class="common-title" role="heading" aria-level="4">Technical</div>
-            <ul class="common-list">
-                
-                    <li class="common-list-item js-multilist-item" data-item="Hourly">
-                        <label>
-                            <input type="checkbox" value="18">
-                            <span class="text">Hourly</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="Daily">
-                        <label>
-                            <input type="checkbox" value="19">
-                            <span class="text">Daily</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="Weekly">
-                        <label>
-                            <input type="checkbox" value="20">
-                            <span class="text">Weekly</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="Monthly">
-                        <label>
-                            <input type="checkbox" value="21">
-                            <span class="text">Monthly</span>
-                        </label>
-                    </li>
-                
-            </ul>
-        </section>
-        
-        <section class="e-custom-views-section">
-            <div class="common-title" role="heading" aria-level="4">Specification</div>
-            <ul class="common-list">
-                
-                    <li class="common-list-item js-multilist-item" data-item="Trading Hours">
-                        <label>
-                            <input type="checkbox" value="38">
-                            <span class="text">Trading Hours</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="Currency">
-                        <label>
-                            <input type="checkbox" value="39">
-                            <span class="text">Currency</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="Market">
-                        <label>
-                            <input type="checkbox" value="40">
-                            <span class="text">Market</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="Number Of Components">
-                        <label>
-                            <input type="checkbox" value="41">
-                            <span class="text">Number Of Components</span>
-                        </label>
-                    </li>
-                
-                    <li class="common-list-item js-multilist-item" data-item="Market Overview">
-                        <label>
-                            <input type="checkbox" value="54">
-                            <span class="text">Market Overview</span>
-                        </label>
-                    </li>
-                
-            </ul>
-        </section>
-        
-        </div>
-
-    </section>
-    <!--</column order>-->
-    <div class="e-custom-views-order js-multilist-step2">
-        <div class="common-title no-mobile" role="heading" aria-level="4">Selected columns</div>
-        <ul class="common-list js-multilist-selected">
-            <li class="common-list-item js-multilist-selected-item">
-                <div class="common-list-item-wrapper">
-                    <button class="button-icon common-list-item-drag" aria-label="drag Last value">
-                        <span class="icon-drag" aria-hidden="true"></span>
-                    </button>
-                    <span class="text js-multilist-selected-label"></span>
-                    <button class="common-list-item-delete js-multilist-remove">
-                    <span class="icon-delete" aria-label="delete this" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </li>
-        </ul>
-    </div>
-</section>
-
-<!--</summery>-->
-<section class="popup-footer">
-    <p class="js-summary-counter-container e-custom-views-summary-line is-disabled no-mobile">
-        <span class="highlight js-summary-counter-selected"></span>
-        <span class="text">From</span>
-        <span class="highlight js-summary-counter-max"></span>
-<!--			<span class="text">--><!--</span>-->
-    </p>
-    <button type="reset" class="common-link-button js-clear-button /hide" disabled=""><!--disabled -->
-        <span class="icon-clear" aria-hidden="true"></span>
-        <span class="text">Clear</span>
-    </button>
-
-    <div class="u-margin-start-auto u-flex">
-        <div class="js-delete-view popup-wrapper hide">
-            <button class="common-link-button js-delete-view-button">
-                <span class="icon-trash" aria-hidden="true"></span>
-                <span class="text">Delete</span>
-            </button>
-            <div class="popup is-top is-alert hide js-delete-view-popup e-delete-view-popup">
-                <div class="popup-content">
-                    <p class="text">Are you sure you want to delete this custom view</p>
-                    <div class="buttons-row">
-                        <button class="common-link-icon js-delete-view-cancel-button">Cancel</button>
-                        <button class="common-button js-delete-view-submit-button">Delete</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="e-delete-button save-button common-button no-mobile js-multilist-submit">Save</button>
-    </div>
-
-    <button class="next-button common-button only-break1 js-multilist-next">Next</button>
-    <button class="done-button common-button full-line js-multilist-done only-break1">Done</button>
-</section>
-</div>
-
-    <!-- Custom Views- END -->
-</div>
-<button class="common-link-button no-mobile js-create-custom-view"><span class="icon-add" aria-hidden="true"></span><span class="text">Create New</span></button>
-</nav>
-</div>
-
-<div class="end-side">
-    
-        <ul class="button-tabs js-table-controls ">
-            
-            
-                <li class="button-tabs-item">
-                    
-<button class="button-tabs-button is-icon-button share-button js-main-share-opener" aria-label="Share" data-url="https://in.investing.com/indices/major-indices" data-title="Major Stock Market Indices - Investing.com India" data-desc="Get live quotes from the most popular indices and stock markets including the NIFTY, KOSPI and BSE.">
-<span class="icon-share" aria-hidden="true"></span>
-
-</button>
-
-                </li>
-            
-            
-<li class="button-tabs-item popup-wrapper no-mobile">
-<button class="button-tabs-button is-icon-button js-download-button" aria-label="Download">
-    <span class="icon-download"></span>
-</button>
-<div class="popup js-download-popup hide">
-    <div class="popup-content">
-        <div class="popup-scroller">
-            <ul class="common-list">
-                <li class="common-list-item js-download-image">
-                    <a class="common-list-link">
-                        <span class="text">Download Picture</span>
-                    </a>
-                </li>
-                <li class="common-list-item js-download-excel">
-                    <a class="common-list-link">
-                        <span class="text">Download Excel</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-</li>
-
-            <li class="button-tabs-item popup-wrapper no-mobile">
-<div class="e-spacing-button">
-    <button class="select table-padding js-spacing-button">
-        <span class="icon-table js-spacing-button-icon" aria-label="paddest"></span>
-        <span class="icon-arrow" aria-hidden="true"></span>
-    </button>
-</div>
-<div class="popup is-auto-width js-spacing-popup hide">
-    <div class="popup-content">
-        <div class="popup-scroller">
-            <ul class="common-list">
-            <li class="common-list-item js-spacing-option" data-value="2">
-                <button class="common-list-link">
-                    <span class="icon-tableX2 table-padding-icon" aria-hidden="true"></span>
-                    <span class="text">x 2</span>
-                </button>
-            </li>
-            <li class="common-list-item js-spacing-option" data-value="1">
-                <button class="common-list-link">
-                    <span class="icon-tableX1-5 table-padding-icon" aria-hidden="true"></span>
-                    <span class="text">x 1.5</span>
-                </button>
-            </li>
-            <li class="common-list-item js-spacing-option" data-value="0">
-                <button class="common-list-link">
-                    <span class="icon-tableX1 table-padding-icon" aria-hidden="true"></span>
-                    <span class="text">x 1</span>
-                </button>
-            </li>
-        </ul>
-        </div>
-    </div>
-</div>
-</li>
-
-        </ul>
-    
-    
-</div>
-</section></header>
-            <section class="instrument js-section-content"><section class="js-table-wrapper common-table-comp grid-mobile">
-
-
-<div class="common-table-wrapper">
-    <div class="common-table-scroller js-table-scroller">
-        <table class="common-table js-table js-streamable-table medium">
-            <colgroup>
-                
-                    <col class="col-checkbox">
-                
-                    <col class="col-flag">
-                
-                    <col class="col-name">
-                
-                    <col class="col-last">
-                
-                    <col class="col-high">
-                
-                    <col class="col-low">
-                
-                    <col class="col-chg_pct">
-                
-                    <col class="col-chg">
-                
-                    <col class="col-time">
-                
-            </colgroup>
-            <thead>
-            <tr>
-                
-                    
-                    <th class="col-checkbox " col-name="checkbox" data-type="text" data-filterable="">
-                        <div class="th-wrapper">
-                            
-                            
-                            
-                            <span class="text"></span>
-                            
-                            
-                        </div>
-                    </th>
-                
-                    
-                    <th class="col-flag " col-name="flag" data-type="text" data-filterable="">
-                        <div class="th-wrapper">
-                            
-                                <div>
-                                    <label class="table-search-field">
-                                        <input type="search" class="js-table-text-filter-input" placeholder="Search">
-                                        <span class="icon-search" aria-hidden="true"></span>
-                                    </label>
-                                </div>
-                            
-                            
-                            
-                            <span class="text"></span>
-                            
-                            
-                        </div>
-                    </th>
-                
-                    
-                    <th class="col-name  is-sortable" col-name="name" data-type="text" data-filterable="text">
-                        <div class="th-wrapper">
-                            
-                            
-                            
-                            <span class="text">Name</span>
-                            
-                            
-                                <button class="button-icon sort-button js-table-sort-button u-visibility-hidden" aria-label="order value by"><span class="icon-order" aria-hidden="true"></span></button>
-                            
-                        </div>
-                    </th>
-                
-                    
-                    <th class="col-last u-txt-align-end is-sortable" col-name="last" data-type="numeric" data-filterable="" data-stream-prefix="pid" data-socket-key="last" data-target-class="">
-                        <div class="th-wrapper">
-                            
-                            
-                            
-                            <span class="text">Last</span>
-                            
-                            
-                                <button class="button-icon sort-button js-table-sort-button u-visibility-hidden" aria-label="order value by"><span class="icon-order" aria-hidden="true"></span></button>
-                            
-                        </div>
-                    </th>
-                
-                    
-                    <th class="col-high u-txt-align-end is-sortable" col-name="high" data-type="numeric" data-filterable="" data-stream-prefix="pid" data-socket-key="high" data-target-class="">
-                        <div class="th-wrapper">
-                            
-                            
-                            
-                            <span class="text">High</span>
-                            
-                            
-                                <button class="button-icon sort-button js-table-sort-button u-visibility-hidden" aria-label="order value by"><span class="icon-order" aria-hidden="true"></span></button>
-                            
-                        </div>
-                    </th>
-                
-                    
-                    <th class="col-low u-txt-align-end is-sortable" col-name="low" data-type="numeric" data-filterable="" data-stream-prefix="pid" data-socket-key="low" data-target-class="">
-                        <div class="th-wrapper">
-                            
-                            
-                            
-                            <span class="text">Low</span>
-                            
-                            
-                                <button class="button-icon sort-button js-table-sort-button u-visibility-hidden" aria-label="order value by"><span class="icon-order" aria-hidden="true"></span></button>
-                            
-                        </div>
-                    </th>
-                
-                    
-                    <th class="col-chg_pct u-txt-align-end is-sortable" col-name="chg_pct" data-type="percent" data-filterable="slider" data-stream-prefix="pid" data-socket-key="pcp" data-target-class="">
-                        <div class="th-wrapper">
-                            
-                            
-                            
-                            <span class="text">Chg%</span>
-                            
-                            
-                                <div class="popup-wrapper column-filter js-column-filter-wrapper">
-                                    <button class="button-icon no-mobile column-filter-button js-column-filter-button" aria-label="filter value">
-                                        <span class="icon-filter-2" aria-hidden="true"></span></button>
-                                    <div class="popup hide js-column-filter-popup is-top">
-                                        <div class="popup-content">
-                                            <div class="double-range">
-                                                <input type="text" class="js-min-input">
-                                                <div class="js-slider-input range-input noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(0%, 0px) scale(1, 1);"></div></div><div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="-4.0" aria-valuemax="3.0" aria-valuenow="-4.0" aria-valuetext="-4.00"></div></div><div class="noUi-origin" style="transform: translate(0%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="-4.0" aria-valuemax="3.0" aria-valuenow="3.0" aria-valuetext="3.00"></div></div></div></div>
-                                                <input type="text" class="js-max-input">
-                                            </div>
-                                            <div class="buttons-row">
-                                                <button class="js-clear-filter common-link-button" aria-label="close range">Clear</button>
-                                                <button class="js-slider-filter-apply common-button" aria-label="save range">Save</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                                <button class="button-icon sort-button js-table-sort-button u-visibility-hidden" aria-label="order value by"><span class="icon-order" aria-hidden="true"></span></button>
-                            
-                        </div>
-                    </th>
-                
-                    
-                    <th class="col-chg u-txt-align-end is-sortable" col-name="chg" data-type="numeric" data-filterable="slider" data-stream-prefix="pid" data-socket-key="pc" data-target-class="">
-                        <div class="th-wrapper">
-                            
-                            
-                            
-                            <span class="text">Chg</span>
-                            
-                            
-                                <div class="popup-wrapper column-filter js-column-filter-wrapper">
-                                    <button class="button-icon no-mobile column-filter-button js-column-filter-button" aria-label="filter value">
-                                        <span class="icon-filter-2" aria-hidden="true"></span></button>
-                                    <div class="popup hide js-column-filter-popup is-top">
-                                        <div class="popup-content">
-                                            <div class="double-range">
-                                                <input type="text" class="js-min-input">
-                                                <div class="js-slider-input range-input noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(0%, 0px) scale(1, 1);"></div></div><div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="-628.0" aria-valuemax="458.0" aria-valuenow="-628.0" aria-valuetext="-628.00"></div></div><div class="noUi-origin" style="transform: translate(0%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="-628.0" aria-valuemax="458.0" aria-valuenow="458.0" aria-valuetext="458.00"></div></div></div></div>
-                                                <input type="text" class="js-max-input">
-                                            </div>
-                                            <div class="buttons-row">
-                                                <button class="js-clear-filter common-link-button" aria-label="close range">Clear</button>
-                                                <button class="js-slider-filter-apply common-button" aria-label="save range">Save</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                                <button class="button-icon sort-button js-table-sort-button u-visibility-hidden" aria-label="order value by"><span class="icon-order" aria-hidden="true"></span></button>
-                            
-                        </div>
-                    </th>
-                
-                    
-                    <th class="col-time u-txt-align-end is-sortable" col-name="time" data-type="timestamp" data-filterable="" data-stream-prefix="pid" data-socket-key="timestamp" data-target-class="js-timestamp-wrapper">
-                        <div class="th-wrapper">
-                            
-                            
-                            
-                            <span class="text">Time</span>
-                            
-                            
-                                <button class="button-icon sort-button js-table-sort-button u-visibility-hidden" aria-label="order value by"><span class="icon-order" aria-hidden="true"></span></button>
-                            
-                        </div>
-                    </th>
-                
-                
-            </tr>
-            </thead>
-            
-
-<tbody>
-
-
-<tr class="common-table-item u-clickable" data-s="17940" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-india"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/s-p-cnx-nifty" title="Nifty 50">Nifty 50</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">11,535.00</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">11,554.75</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">11,430.40</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.56%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+64.75</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599040968">
-            <time datetime="09-02" class="js-timestamp-wrapper text">15:32:48</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="39929" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-india"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/sensex" title="BSE Sensex">BSE Sensex</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">39,086.03</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">39,141.84</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">38,736.22</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.48%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+185.23</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599049320">
-            <time datetime="09-02" class="js-timestamp-wrapper text">17:52:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="17950" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-india"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/bank-nifty" title="Nifty Bank">Nifty Bank</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">23,874.55</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">23,926.15</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">23,482.55</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.26%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+62.55</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599040968">
-            <time datetime="09-02" class="js-timestamp-wrapper text">15:32:48</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="17942" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-india"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/india-vix" title="India VIX">India VIX</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">21.1050</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">22.4950</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">19.8525</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-down">
-            <span class="text">-3.19%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-down">
-            <span class="text">-0.6950</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599041066">
-            <time datetime="09-02" class="js-timestamp-wrapper text">15:34:26</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="169" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-usa"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/us-30" title="Dow Jones">Dow Jones</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">28,850.28</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">28,922.11</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">28,713.53</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.71%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+204.62</span>
-        </td>
-        
-    
-        <td class="col-time opened u-txt-align-end" data-value="1599062743">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:36:13</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="166" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-usa"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/us-spx-500" title="S&amp;P 500 - Derived">S&amp;P 500</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">3,550.30</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">3,555.10</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">3,536.18</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.67%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+23.65</span>
-        </td>
-        
-    
-        <td class="col-time opened u-txt-align-end" data-value="1599062743">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:38:09</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="14958" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-usa"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/nasdaq-composite" title="Nasdaq">Nasdaq</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text green-bg">11,929.31</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">12,050.46</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">11,836.18</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-down">
-            <span class="text">-0.09%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-down">
-            <span class="text">-10.36</span>
-        </td>
-        
-    
-        <td class="col-time opened u-txt-align-end" data-value="1599062700">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:38:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="170" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-usa"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/smallcap-2000" title="Small Cap 2000 - Derived">Small Cap 2000</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">1,579.05</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">1,582.20</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">1,567.30</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.22%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+3.54</span>
-        </td>
-        
-    
-        <td class="col-time opened u-txt-align-end" data-value="1599062745">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:38:08</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="44336" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-usa"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/volatility-s-p-500" title="S&amp;P 500 VIX - Derived">S&amp;P 500 VIX</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">25.73</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">26.61</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">25.53</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-down">
-            <span class="text">-1.49%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-down">
-            <span class="text">-0.39</span>
-        </td>
-        
-    
-        <td class="col-time opened u-txt-align-end" data-value="1599062717">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:38:02</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="24441" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-canada"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/s-p-tsx-composite" title="S&amp;P/TSX - Derived">S&amp;P/TSX</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">16,692.77</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">16,728.32</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">16,648.96</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.29%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+47.78</span>
-        </td>
-        
-    
-        <td class="col-time opened u-txt-align-end" data-value="1599062729">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:37:58</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="941629" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-canada"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/thomson-reuters-canada-50" title="TR Canada 50">TR Canada 50</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">283.180</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">283.180</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">280.160</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.65%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+1.840</span>
-        </td>
-        
-    
-        <td class="col-time opened u-txt-align-end" data-value="1598936400">
-            <time datetime="09-01" class="js-timestamp-wrapper text">01/09</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="17920" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-brazil"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/bovespa" title="Bovespa">Bovespa</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">101,584.61</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">102,823.88</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">101,187.42</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-down">
-            <span class="text">-0.57%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-down">
-            <span class="text">-583.04</span>
-        </td>
-        
-    
-        <td class="col-time opened u-txt-align-end" data-value="1599061800">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:23:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="27254" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-mexico"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/ipc" title="S&amp;P/BMV IPC">S&amp;P/BMV IPC</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">37,109.30</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">37,656.04</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">37,027.83</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-down">
-            <span class="text">-1.01%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-down">
-            <span class="text">-378.69</span>
-        </td>
-        
-    
-        <td class="col-time opened u-txt-align-end" data-value="1599061500">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:18:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="172" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-germany"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/germany-30" title="DAX - Derived">DAX</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">13,243.43</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">13,303.17</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">13,062.17</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+2.07%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+269.18</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599060900">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:05:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="27" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-uk"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/uk-100" title="FTSE 100 - Derived">FTSE 100</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">5,940.95</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">5,974.70</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">5,862.05</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+1.35%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+78.90</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599060899">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:04:59</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="167" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-france"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/france-40" title="CAC 40">CAC 40</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">5,031.74</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">5,062.01</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">4,959.64</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+1.90%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+93.64</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599062702">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:35:02</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="175" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-europe"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/eu-stoxx50" title="Euro Stoxx 50 - Derived">Euro Stoxx 50</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">3,337.77</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">3,358.11</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">3,284.30</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+1.84%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+60.19</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599060895">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:04:55</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="168" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-netherlands"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/netherlands-25" title="AEX">AEX</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">561.27</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">565.57</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">554.71</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+1.64%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+9.05</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599062702">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:35:02</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="174" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-spain"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/spain-35" title="IBEX 35 - Derived">IBEX 35</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">6,996.90</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">7,046.10</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">6,963.90</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.57%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+40.00</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599060895">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:04:55</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="177" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-italy"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/it-mib-40" title="FTSE MIB - Derived">FTSE MIB</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">19,858.21</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">20,036.44</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">19,672.43</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+1.34%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+263.19</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599060899">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:04:59</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="176" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-switzerland"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/switzerland-20" title="SMI - Derived">SMI</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">10,397.00</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">10,422.00</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">10,255.50</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+2.04%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+208.15</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599060899">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:04:59</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="14600" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-portugal"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/psi-20" title="PSI 20">PSI 20</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">4,329.33</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">4,350.54</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">4,319.30</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.52%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+22.21</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599060930">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:05:30</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="14601" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-belgium"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/bel-20" title="BEL 20 - Derived">BEL 20</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">3,348.70</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">3,375.50</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">3,332.60</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+1.04%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+34.47</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599060598">
-            <time datetime="09-02" class="js-timestamp-wrapper text">20:59:58</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="1016254" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-austria"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/atx" title="ATX">ATX</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">2,216.09</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">2,248.22</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">2,209.01</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-down">
-            <span class="text">-0.15%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-down">
-            <span class="text">-3.39</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599060927">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:05:27</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="25685" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-sweden"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/omx-stockholm-30" title="OMXS30">OMXS30</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">1,782.86</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">1,804.50</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">1,777.59</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.76%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+13.42</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599060900">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:05:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="25760" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-denmark"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/omx-copenhagen-20" title="OMXC20">OMXC20</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">1,327.14</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">1,332.30</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">1,315.64</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+1.27%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+16.66</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599059100">
-            <time datetime="09-02" class="js-timestamp-wrapper text">20:35:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="13666" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-russian_federation"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/mcx" title="MOEX">MOEX</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">2,956.50</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">3,002.25</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">2,946.29</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-down">
-            <span class="text">-0.62%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-down">
-            <span class="text">-18.50</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599061861">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:21:01</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="13665" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-russian_federation"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/rtsi" title="RTSI">RTSI</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">1,234.82</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">1,283.69</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">1,229.50</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-down">
-            <span class="text">-3.11%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-down">
-            <span class="text">-39.68</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599061861">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:21:01</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="14602" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-poland"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/wig-20" title="WIG20">WIG20</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">1,785.44</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">1,796.80</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">1,777.15</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.72%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+12.83</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599059700">
-            <time datetime="09-02" class="js-timestamp-wrapper text">20:45:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="38014" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-hungary"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/hungary-stock-market" title="Budapest SE">Budapest SE</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">34,851.29</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">35,334.20</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">34,761.40</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.03%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+8.78</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1598850000">
-            <time datetime="08-31" class="js-timestamp-wrapper text">31/08</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="19155" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-turkey"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/ise-100" title="BIST 100">BIST 100</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">1,083.91</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">1,091.30</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">1,079.83</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-down">
-            <span class="text">-0.12%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-down">
-            <span class="text">-1.28</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599059412">
-            <time datetime="09-02" class="js-timestamp-wrapper text">20:40:12</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="10529" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-israel"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/ta25" title="TA 35">TA 35</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">1,386.91</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">1,404.18</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">1,385.31</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-down">
-            <span class="text">-0.60%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-down">
-            <span class="text">-8.40</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599056650">
-            <time datetime="09-02" class="js-timestamp-wrapper text">19:54:10</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="11319" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-saudi_arabia"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/tasi" title="Tadawul All Share">Tadawul All Share</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">8,013.44</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">8,013.44</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">7,861.61</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+1.45%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+114.58</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599049140">
-            <time datetime="09-02" class="js-timestamp-wrapper text">17:49:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="178" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-japan"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/japan-ni225" title="Nikkei 225 - Derived">Nikkei 225</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">23,247.15</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">23,287.40</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">23,170.82</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.47%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+109.08</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599026399">
-            <time datetime="09-02" class="js-timestamp-wrapper text">11:29:59</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="171" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-australia"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/aus-200" title="S&amp;P/ASX 200">S&amp;P/ASX 200</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">6,063.20</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">6,075.70</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">5,953.40</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+1.84%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+109.80</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599029264">
-            <time datetime="09-02" class="js-timestamp-wrapper text">12:17:44</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="41141" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-new_zealand"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/dow-jones-new-zealand" title="DJ New Zealand">DJ New Zealand</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">362.46</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">362.82</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">358.55</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+1.18%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+4.22</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599060600">
-            <time datetime="09-02" class="js-timestamp-wrapper text">21:00:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="40820" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-china"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/shanghai-composite" title="Shanghai">Shanghai</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">3,404.80</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">3,421.40</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">3,377.21</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-down">
-            <span class="text">-0.17%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-down">
-            <span class="text">-5.81</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599033540">
-            <time datetime="09-02" class="js-timestamp-wrapper text">13:29:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="942630" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-china"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/szse-component" title="SZSE Component">SZSE Component</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">13,887.43</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">13,944.16</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">13,737.83</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.27%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+37.77</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599035343">
-            <time datetime="09-02" class="js-timestamp-wrapper text">13:59:03</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="28930" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-china"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/ftse-china-a50" title="China A50">China A50</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">15,741.56</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">15,851.71</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">15,612.29</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-down">
-            <span class="text">-0.16%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-down">
-            <span class="text">-25.23</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599030067">
-            <time datetime="09-02" class="js-timestamp-wrapper text">12:31:07</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="954522" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-china"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/dj-shanghai" title="DJ Shanghai">DJ Shanghai</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">503.93</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">506.75</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">499.49</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-down">
-            <span class="text">-0.18%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-down">
-            <span class="text">-0.92</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599035340">
-            <time datetime="09-02" class="js-timestamp-wrapper text">13:59:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="179" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-hong_kong"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/hang-sen-40" title="Hang Seng - Derived">Hang Seng</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">25,120.09</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">25,239.86</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">24,931.17</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-down">
-            <span class="text">-0.26%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-down">
-            <span class="text">-64.76</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599033601">
-            <time datetime="09-02" class="js-timestamp-wrapper text">13:30:01</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="38017" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-taiwan"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/taiwan-weighted" title="Taiwan Weighted">Taiwan Weighted</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">12,699.50</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">12,802.61</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">12,646.47</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-down">
-            <span class="text">-0.03%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-down">
-            <span class="text">-3.78</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599024780">
-            <time datetime="09-02" class="js-timestamp-wrapper text">11:03:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="38015" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-thailand"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/thailand-set" title="SET">SET</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">1,315.88</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">1,316.08</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">1,301.78</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.79%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+10.31</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599039960">
-            <time datetime="09-02" class="js-timestamp-wrapper text">15:16:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="37426" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-south_korea"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/kospi" title="KOSPI">KOSPI</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">2,364.37</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">2,369.57</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">2,341.29</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.63%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+14.82</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599037280">
-            <time datetime="09-02" class="js-timestamp-wrapper text">14:31:20</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="29049" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-indonesia"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/idx-composite" title="IDX Composite">IDX Composite</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">5,311.97</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">5,337.10</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">5,295.28</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.02%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+1.29</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599034500">
-            <time datetime="09-02" class="js-timestamp-wrapper text">13:45:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="49692" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-philippines"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/psei-composite" title="PSEi Composite">PSEi Composite</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">5,738.39</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">5,820.70</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">5,703.59</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end">
-            <span class="text">0%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end">
-            <span class="text">0.00</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599022800">
-            <time datetime="09-02" class="js-timestamp-wrapper text">10:30:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="49677" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-pakistan"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/karachi-100" title="Karachi 100">Karachi 100</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">41,834.85</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">41,932.85</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">41,377.26</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+1.11%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+457.59</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599049785">
-            <time datetime="09-02" class="js-timestamp-wrapper text">17:59:45</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="995072" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-vietnam"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/hnx-30" title="HNX 30">HNX 30</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">233.13</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">233.29</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">231.10</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.45%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+1.04</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1598936400">
-            <time datetime="09-01" class="js-timestamp-wrapper text">01/09</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-
-<tr class="common-table-item u-clickable" data-s="29151" data-json-hash="">
-    
-        <td class="col-checkbox">
-            <div class="th-wrapper js-flag-wrapper"><label><input class="checkbox js-row-mark-checkbox" type="checkbox"></label></div>
-        </td>
-        
-    
-        <td class="col-flag">
-            <span class="flag flag-sri_lanka"></span>
-        </td>
-        
-    
-        <td class="col-name">
-            <a class="js-instrument-page-link" href="/indices/cse-all-share" title="CSE All-Share">CSE All-Share</a>
-        </td>
-        
-    
-        <td class="col-last u-txt-align-end">
-            <span class="text">5,359.99</span>
-        </td>
-        
-    
-        <td class="col-high u-txt-align-end">
-            <span class="text">5,365.75</span>
-        </td>
-        
-    
-        <td class="col-low u-txt-align-end">
-            <span class="text">5,329.33</span>
-        </td>
-        
-    
-        <td class="col-chg_pct u-txt-align-end u-up">
-            <span class="text">+0.58%</span>
-        </td>
-        
-    
-        <td class="col-chg u-txt-align-end u-up">
-            <span class="text">+30.66</span>
-        </td>
-        
-    
-        <td class="col-time closed u-txt-align-end" data-value="1599038460">
-            <time datetime="09-02" class="js-timestamp-wrapper text">14:51:00</time><span class="icon-clock" aria-hidden="true"></span>
-        </td>
-        
-    
-    
-</tr>
-
-</tbody>
-
-        </table>
-
-        <div class="popup hide js-line-actions-popup">
-            <header class="popup-header only-mobile">
-                <h2 class="common-title">Customize</h2>
-                <button class="close-button button-icon" aria-label="delete this">
-                    <span class="icon-close" aria-hidden="true"></span>
-                </button>
-            </header>
-            <div class="popup-content">
-                <div class="popup-scroller">
-                    <ul class="common-list">
-                        <li class="common-list-item">
-                            <button class="common-list-link js-line-actions-alert-button">
-                                <span class="text">Add Alert</span>
-                            </button>
-                        </li>
-                        <li class="common-list-item">
-                            <button class="common-list-link js-line-actions-discussion">
-                                <span class="text">Join Discussion</span>
-                            </button>
-                        </li>
-                        <li class="common-list-item">
-                            <button class="common-list-link js-line-actions-historical" data-link-postfix="historical-data">
-                                <span class="text">View Historical Data</span>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+	
+	
+
+
+<div class="top-section">
+	<div class='container'>
+		
+				<h1 class="pr-3">Manage Your Finances With The 100% Open Source Accounting Software</h1>
+				<p class='lead text-muted mx-0 pr-0 pr-md-3 mw-100' >All the tools you need to manage cash flow in one place, right from recording transactions to summarizing and analyzing financial reports. It's bookkeeping made easy.</p>
+			
+				
+				<div class="mb-2">
+					<p class="mt-5 lead text-muted">Trusted by Companies Worldwide</p>
+					<img src="assets/central/images/generic-one-row.png" class="mt-3 mb-5 mb-md-0 col-xs-12 col-md-7" style="padding-left: 0px;"  alt="Companies using ERPNext">
+				</div>
+				
+				<a href='pricing.html' class='btn btn-primary btn-md mt-4'>
+					Start Free Trial
+				</a>
+			
+		</div>
+	</div>
 </div>
 
 
 
-<div class="common-table-summary js-bulk-panel hide">
-<div class="start">
-    <button class="clear-checkbox js-clear-all-selected" aria-label="clear all selected checkbox"></button>
-    <span class="clear-checkbox-text js-clear-all-selected">Clear All</span>
-    <div class="amount-selected"><span class="highlight js-marked-row-counter">0</span><span class="text">Selected</span></div>
-</div>
-<div class="middle">
-    <div class="buttons-row">
-        
-<div class="popup-wrapper js-bulk-portfolio-popup-wrapper">
-<button class="common-button js-bulk-button-portfolio"><span class="icon-add"></span><span class="text">Add to Watchlist</span>
-</button>
-</div>
-        
 
-<button class="common-button  add-alert-bell-button js-bulk-button-alerts ">
-<span class="add-alert-bell">
-        <span class="icon-alert" aria-hidden="true"></span>
-        <span class="notification-sum hide js-alerts-sum">0</span>
-    </span>
-<span class="text hide js-my-alerts-title">My Alerts</span>
-<span class="text  js-add-alert-title">Add Alert</span>
-</button>
-
-        
-<div class="popup-wrapper">
-<button class="common-button-1 js-bulk-button-downloads"><span class="icon-download"></span><span class="text">Download</span></button>
-<div class="popup is-top js-bulk-downloads-popup hide">
-    <div class="popup-content">
-        <div class="popup-scroller">
-            <ul class="common-list">
-                <li class="common-list-item">
-                    <button class="common-list-link js-bulk-download-image">
-                        <span class="text">Download Picture</span>
-                    </button>
-                </li>
-                <li class="common-list-item">
-                    <button class="common-list-link js-bulk-download-excel">
-                        <span class="text">Download Excel</span>
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-</div>
-        
-        
-    </div>
-</div>
-<div class="end"></div>
-</div>
-<div class="common-message empty-table  hide ">
-    <div class="common-message-content">
-        <img class="common-message-image" src="//i-invdn-com.akamaized.net/redesign/images/illustrations/search_empty.svg" alt="">
-        <div class="common-title">No matching items found</div>
-    </div>
-</div>
+	
+	
+<section class="section section-bg">
+	<div class="container">
+		
+		<h2>Real-Time View Of Your Accounting Books </h2>
+		<p class="text-muted" style="font-size: 1.25em;">Open source accounting dashboards highlight all key performance indicators at a glance. With configurable accounting dimensions and customizable dashboards, it's finally possible to analyze every component of your business in one place.</p>
+		
+		
+		<img class="card mt-5" src="files/accounts-dashboard15be3f.png" alt="Open Source Accounting - Accounting Dashboard"/>
+		
+		
+		<a href="pricing.html" class="text-muted my-3 mb-md-0 inline-block">
+			Try Now
+			<span class="hover-right">&#8594;</span>
+		</a>
+		
+	</div>
 </section>
 
 
-<div class="instrument-disclaimer js-disclaimer common-box">
-<p class="text"> <b>Disclaimer:</b> Fusion Media would like to remind you that the data contained in this website is not necessarily real-time nor accurate. All CFDs (stocks, indexes, futures), cryptocurrencies, and Forex prices are not provided by exchanges but rather by market makers, and so prices may not be accurate and may differ from the actual market price, meaning prices are indicative and not appropriate for trading purposes. Therefore Fusion Media doesn't bear any responsibility for any trading losses you might incur as a result of using this data.
-<br>
-Fusion Media or anyone involved with Fusion Media will not accept any liability for loss or damage as a result of reliance on the information including data, quotes, charts and buy/sell signals contained within this website. Please be fully informed regarding the risks and costs associated with trading the financial markets, it is one of the riskiest investment forms possible.</p>
-</div></section>
-            
-<section class="js-body-revenues-wrapper">
+	
 
+	
 
-<div class="ads no-mobile  " data-placeholder="bottom_box_2">
-<div class="doubleLineSeperator"></div>
-<h2>Related Articles</h2>
-<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5328355314741698" data-ad-slot="7750303699" data-matched-content-rows-num="2" data-matched-content-columns-num="3" data-matched-content-ui-type="image_stacked" data-ad-format="autorelaxed"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
+	
+	
+<section class="section-md section-light">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-12 col-md-7 order-2 order-md-1">
+				<img class="card" src="files/erpnext-chart-of-accounts.png" alt="Open Source Accounting - Chart of Accounts"/>
+			</div>
+			
+			<div class="col-12 col-md-5 order-1 order-md-2">
+				<h3>Chart Of Accounts</h3>
+				<p class="text-muted" style="line-height: 1.75;">The Chart of Accounts — a configurable tree view for structuring accounting ledgers as desired — is the blueprint of your company. Ledgers act as leaf nodes, while groups can have sub-groups and ledgers within them.</p>
+				
+				<a href="pricing.html" class="text-muted mb-3 mb-md-0 inline-block">
+					Try Now
+					<span class="hover-right">&#8594;</span>
+				</a>
+				
+			</div>
+		</div>
+	</div>
 </section>
-        </div>
-    </section>
-</body>
+
+
+	
+
+	
+	
+<section class="section-md section-bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-5">
+				<h3>Journals And Payments</h3>
+				<p class="text-muted" style="line-height: 1.75;">Maintain a clean and crisp ledger to avoid mismatches when closing accounts. Track income and expenses (deferred or accrued), set up notifications for period closing, and control cash flow. Advance payments can be recorded and reconciled in one go.</p>
+				
+				<a href="pricing.html" class="text-muted mb-3 mb-md-0 inline-block">
+					Try Now
+					<span class="hover-right">&#8594;</span>
+				</a>
+				
+			</div>
+			<div class="col-12 col-md-7">
+				
+				<img class="card" src="files/general-ledger.png" alt="Open Source Accounting - General Ledger Report"/>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+
+	
+
+	
+	
+<section class="section-md section-light">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-12 col-md-7 order-2 order-md-1">
+				<img class="card" src="files/sales-invoice.png" alt="Open Source Accounting - Invoice"/>
+			</div>
+			
+			<div class="col-12 col-md-5 order-1 order-md-2">
+				<h3>Billing And Pricing</h3>
+				<p class="text-muted" style="line-height: 1.75;">Invoice your customers and chase receivable payments easily, with payment requests and notifications via email or SMS reminders. Create custom print templates for bills and set up defaults in no time. Item pricing just needs to be configured once, then it will be auto-fetched in all future transactions.</p>
+				
+				<a href="pricing.html" class="text-muted mb-3 mb-md-0 inline-block">
+					Try Now
+					<span class="hover-right">&#8594;</span>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+
+	
+
+	
+	
+<section class="section section-bg">
+	<div class="container">
+		
+		<h2>Multi-Currency Accounting</h2>
+		<p class="text-muted" style="font-size: 1.25em;">Managing transactions in different currencies is simple with our open source accounting software. Send invoices and add expenses in any currency, and let the system convert them to your base currency. You can even see financial transactions and reports in multiple currencies. </p>
+		
+		
+		<img class="card mt-5" src="files/multi-currency-accounting387fe5.png" alt="Open Source Accounting - Multi-Currency Accounting"/>
+		
+		
+		<a href="pricing.html" class="text-muted my-3 mb-md-0 inline-block">
+			Try Now
+			<span class="hover-right">&#8594;</span>
+		</a>
+		
+	</div>
+</section>
+
+
+	
+
+	
+
+	
+	
+<section class="section-md section-light">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-12 col-md-7 order-2 order-md-1">
+				<img class="card" src="files/subscription-plan.png" alt="Open Source Accounting - Subscription Plan"/>
+			</div>
+			
+			<div class="col-12 col-md-5 order-1 order-md-2">
+				<h3>Auto-Invoicing</h3>
+				<p class="text-muted" style="line-height: 1.75;">Don't waste time sending renewal invoices every month. Use the Subscriptions feature to get invoices auto-generated for subscription orders.</p>
+				
+				<a href="pricing.html" class="text-muted mb-3 mb-md-0 inline-block">
+					Try Now
+					<span class="hover-right">&#8594;</span>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+
+	
+
+	
+	
+<section class="section-md section-bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-5">
+				<h3>Banking </h3>
+				<p class="text-muted" style="line-height: 1.75;">Create unlimited bank and cash accounts, and track their opening and current balances. Maintain bank accounts for your suppliers and customers. Ensure that your financials are synchronized with one-click bank-statement upload. It's clearance made easy, and accounting made easier.</p>
+				
+				<a href="pricing.html" class="text-muted mb-3 mb-md-0 inline-block">
+					Try Now
+					<span class="hover-right">&#8594;</span>
+				</a>
+				
+			</div>
+			<div class="col-12 col-md-7">
+				
+				<img class="card" src="files/bank-reconciliation.png" alt="Open Source Accounting - Banking "/>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+
+	
+
+	
+	
+<section class="section-md section-light">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-12 col-md-7 order-2 order-md-1">
+				<img class="card" src="files/customize-sales-invoice.png" alt="Customizable Open Source Accounting"/>
+			</div>
+			
+			<div class="col-12 col-md-5 order-1 order-md-2">
+				<h3>On-The-Fly Customizations</h3>
+				<p class="text-muted" style="line-height: 1.75;">Create your own open source accounting software. Map the data you care about by adding custom fields in your forms. Then customize form behavior by auto-fetching values, hide fields based on user roles, and create custom print formats — all without a single line of code. </p>
+				
+				<a href="pricing.html" class="text-muted mb-3 mb-md-0 inline-block">
+					Try Now
+					<span class="hover-right">&#8594;</span>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+
+	
+
+	
+	
+<section class="section section-bg">
+	<div class="container">
+		
+		<h2>Multilingual Open Source Accounting Software</h2>
+		<p class="text-muted" style="font-size: 1.25em;">Can't find your language? Help us translate: <a href="https://translate.erpnext.com/">https://translate.erpnext.com</a></p>
+		
+		
+		<img class="card mt-5" src="files/languages1cf245.png" alt="Multilingual Open Source Accounting"/>
+		
+		
+		<a href="pricing.html" class="text-muted my-3 mb-md-0 inline-block">
+			Try Now
+			<span class="hover-right">&#8594;</span>
+		</a>
+		
+	</div>
+</section>
+
+
+	
+
+	
+
+
+	
+
+
+
+	
+
+	
+
+	
+
+
+
+
+<section class="section-padding section-light">
+	<div class="container">
+		<div class="text-center">
+			<h3>Features that will keep your accounts balanced </h3>
+			<p class='lead'></p>
+		</div>
+		<div class='row mt-5'>
+			
+			<div class='col-sm-4 mb-4'>
+				
+				<a href='accounting/chart-of-accounts.html' class='card h-100 text-left'>
+					<div class='card-body '>
+						<h5 class='card-title'>Chart of Accounts</h5>
+						Whatever charts of accounts your organization needs, we’ve got you covered.
+					</div>
+				</a>
+				
+			</div>
+			
+			<div class='col-sm-4 mb-4'>
+				
+				<a href='accounting/journal-entry.html' class='card h-100 text-left'>
+					<div class='card-body '>
+						<h5 class='card-title'>Journal Entry</h5>
+						Leave no transaction unrecorded.  Make quick journal entries, difference entries, reverse entries, contra entries, and more
+					</div>
+				</a>
+				
+			</div>
+			
+			<div class='col-sm-4 mb-4'>
+				
+				<a href='accounting/open-source-bookkeeping.html' class='card h-100 text-left'>
+					<div class='card-body '>
+						<h5 class='card-title'>Bookkeeping</h5>
+						Comprehensive, open-source bookkeeping software with the additional power of a full ERP
+					</div>
+				</a>
+				
+			</div>
+			
+			<div class='col-sm-4 mb-4'>
+				
+				<a href='open-source-sales-purchase.html' class='card h-100 text-left'>
+					<div class='card-body '>
+						<h5 class='card-title'>Sales and Purchase Management</h5>
+						Track inventory levels, replenish stock, and manage sales orders, customers, suppliers, shipments, deliverables, and order fulfillment
+					</div>
+				</a>
+				
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="section-padding section-bg">
+	<div class="container">
+		<div class="text-center">
+			<h3>ERPNext is the world's best 100% Open Source ERP Solution</h3>
+			<p class='lead'>Open Source Software for Modern Businesses</p>
+		</div>
+		<div class='row mt-5'>
+			
+			<div class='col-sm-4 mb-4'>
+				
+				<a href='open-source-accounting.html' class='card h-100 text-left'>
+					<div class='card-body '>
+						<h5 class='card-title'>Accounting</h5>
+						Get a real time view of your cash flow. Full fledged accounting module covering every aspect of book keeping.
+					</div>
+				</a>
+				
+			</div>
+			
+			<div class='col-sm-4 mb-4'>
+				
+				<a href='open-source-hrms.html' class='card h-100 text-left'>
+					<div class='card-body '>
+						<h5 class='card-title'>HR & Payroll</h5>
+						Manage full employee life cycle right from onboarding, payroll, attendance, expense claims, assets to separation.
+					</div>
+				</a>
+				
+			</div>
+			
+			<div class='col-sm-4 mb-4'>
+				
+				<a href='open-source-manufacturing-erp-software.html' class='card h-100 text-left'>
+					<div class='card-body '>
+						<h5 class='card-title'>Manufacturing</h5>
+						Effectively maintain and manage multilevel bill of materials, production planning, job cards & inventory.
+					</div>
+				</a>
+				
+			</div>
+			
+			<div class='col-sm-4 mb-4'>
+				
+				<a href='open-source-sales-purchase.html' class='card h-100 text-left'>
+					<div class='card-body '>
+						<h5 class='card-title'>Sales & Purchase</h5>
+						Increase productivity and lower costs by managing your sales and purchase cycles, from purchase to sales orders
+					</div>
+				</a>
+				
+			</div>
+			
+			<div class='col-sm-4 mb-4'>
+				
+				<a href='open-source-crm.html' class='card h-100 text-left'>
+					<div class='card-body '>
+						<h5 class='card-title'>CRM</h5>
+						Win and retain more customers by optimising sales process. Track leads, opportunities and send the quotes on the go.
+					</div>
+				</a>
+				
+			</div>
+			
+			<div class='col-sm-4 mb-4'>
+				
+				<a href='open-source-projects.html' class='card h-100 text-left'>
+					<div class='card-body '>
+						<h5 class='card-title'>Projects</h5>
+						Deliver both internal and external projects on time, budget and profitability. Track tasks, timesheets and issues by project.
+					</div>
+				</a>
+				
+			</div>
+			
+			<div class='col-sm-4 mb-4'>
+				
+				<a href='open-source-saas-help-desk-software.html' class='card h-100 text-left'>
+					<div class='card-body '>
+						<h5 class='card-title'>Helpdesk</h5>
+						Deliver a better service experience with an intuitive issue tracker and integrated knowledge base.
+					</div>
+				</a>
+				
+			</div>
+			
+			<div class='col-sm-4 mb-4'>
+				
+				<a href='open-source-asset-management-software.html' class='card h-100 text-left'>
+					<div class='card-body '>
+						<h5 class='card-title'>Asset Management</h5>
+						Maintain and Manage details of assets, their movement, value adjustment and depreciation.
+					</div>
+				</a>
+				
+			</div>
+			
+			<div class='col-sm-4 mb-4'>
+				
+				<a href='open-source-website-builder-software.html' class='card h-100 text-left'>
+					<div class='card-body '>
+						<h5 class='card-title'>Website</h5>
+						ERPNext comes with a fully featured content management with blogs, web pages and forms.
+					</div>
+				</a>
+				
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+
+
+
+
+	
+<section class="section-md section-light">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-7">
+				<img src="assets/central/images/mobile.png" alt="Device Screenshots"/>
+			</div>
+			<div class="col-12 col-md-5">
+				<h3>Keep work flowing—on the go</h3>
+				<p class="text-muted" style="line-height: 1.75;">The free ERPNext mobile app helps you keep your business moving from anywhere, so you can stay focused on what matters. Access accounts, update projects and quotations, and quickly take care of tasks all from your phone or tablet.</p>
+				<div class="app-store-links">
+					<div class="store-badge app-store">
+						<a href="https://itunes.apple.com/in/app/erpnext/id1027318091?mt=8" target="_blank">
+							<img alt="Get in the App Store" src="assets/erpnext_com/img/app-store-badge.svg"></a>
+					</div>
+					<div class="store-badge play-store">
+						<a href="https://play.google.com/store/apps/details?id=io.frappe.mobile&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">
+							<img alt="Get it on Google Play" src="../play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	
+
+
+
+<section class='section-padding section section-bg'>
+	<div class='container text-center'>
+		<h3 class='text-center'>Integrate with your favourite Apps</h3>
+		<p class='lead'>ERPNext has a host of built-in integrations that help your business take-off faster</p>
+		<img src="assets/erpnext_com/img/home/integrations.png" alt="ERPNext Integrations" class='my-5 d-none d-md-block'>
+		<img src="assets/erpnext_com/img/home/integrations-mobile.png" alt="ERPNext Integrations" class='my-5 d-block d-md-none'>
+
+		<!-- <div class='mt-4 '>
+				<a class="btn btn-primary btn-lg" href="/pricing">Start Free Trial</a>
+			</div> -->
+	</div>
+</section>
+
+
+
+
+<section class='section-padding section-light'>
+	<div class='container text-center'>
+		<h3 class='text-center'>Loved by Users</h3>
+		<p class='lead'>Used by more than 5000 companies across the world</p>
+		<img src="assets/erpnext_com/img/home/customer-logos.png" alt="Companies using ERPNext" class='my-5 d-none d-md-block'>
+		<img src="assets/erpnext_com/img/home/customer-logos-mobile.png" alt="Companies using ERPNext" class='my-5 d-block d-md-none'>
+		<div class='mt-4 '>
+			<a class="btn btn-primary btn-md" href="pricing.html">Start Free Trial</a>
+			<a class="btn btn-secondary btn-md" href="contact-form.html">Contact Us</a>
+		</div>
+	</div>
+</section>
+
+
+<section class="section-sm section-dark footer-message">
+		<div class="container text-center">
+			<p style="max-width: 75%; margin-left: auto; margin-right: auto; line-height: 1.5; font-weight: 400; font-size: 1.25rem;">ERPNext is used by more than 5000 companies across the world</p>
+			<div class="mt-3">
+				<a class="btn btn-light mr-2" href="pricing.html">Start Free Trial</a>
+				<a class="btn btn-light" href="contact-form.html">Contact Us</a></h4>
+			</div>
+		</div>
+</section>
+<footer class="bg-dark pt-4">
+	<div class="container px-5 px-sm-3">
+	<div class="row my-3 my-sm-5">
+		<div class="col-sm-3 col-6">
+			<h6 class="text-light">Solutions</h6>
+			<ul class="list-unstyled">
+				<li class="mb-2">
+					<a class="text-muted" href="open-source-manufacturing-erp-software.html">Manufacturing</a>
+				</li>
+				<li class="mb-2">
+					<a class="text-muted" href="open-source-services-erp-software.html">Services</a>
+				</li>
+				<li class="mb-2">
+					<a class="text-muted" href="open-source-distribution-erp-software.html">Distribution</a>
+				</li>
+				<li class="mb-2">
+					<a class="text-muted" href="open-source-retail-erp-software.html">Retail</a>
+				</li>
+				<li class="mb-2">
+					<a class="text-muted" href="open-source-education.html">Education</a>
+				</li>
+				<li class="mb-2">
+					<a class="text-muted" href="open-source-healthcare.html">Healthcare</a>
+				</li>
+				<li class="mb-2">
+					<a class="text-muted" href="open-source-agriculture-erp-software.html">Agriculture</a>
+				</li>
+				<li class="mb-2">
+					<a class="text-muted" href="open-source-ngo-erp-software.html">Non Profit</a>
+				</li>
+				<li class="mb-2">
+					<a class="text-muted" href="whitepapers.html">Whitepapers</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-sm-3 col-6">
+			<div>
+				<h6 class="text-light">Services</h6>
+				<ul class="list-unstyled">
+					<li class="mb-2">
+						<a class="text-muted" href="pricing.html">Cloud</a>
+					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="support.html">Support</a>
+					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="mobile.html">Mobile Apps</a>
+					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="find-my-login.html">My ERPNext Login</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mt-4">
+				<h6 class="text-light">Releases</h6>
+				<ul class="list-unstyled">
+					<li class="mb-2">
+						<a class="text-muted" href="version-12.html" target="_blank">Version 12</a>
+					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="http://erpnext.org/releases/version-11" target="_blank">Version 11</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-sm-3 col-6">
+			<h6 class="text-light">ERPNext</h6>
+			<ul class="list-unstyled">
+				<li class="mb-2">
+					<a class="text-muted" href="blog.html" target="_blank" >Blog</a>
+				</li>
+				<li class="mb-2">
+				<li class="mb-2">
+					<a class="text-muted" href="newsletter.html" target="_blank" >Newsletter</a>
+				</li>
+				<li class="mb-2">
+					<a class="text-muted" href="https://github.com/frappe/erpnext" target="_blank" >GitHub</a>
+				</li>
+				<li class="mb-2">
+					<a class="text-muted" href="https://erpnext.org/" target="_blank">Foundation</a>
+				</li>
+				<li class="mb-2">
+					<a class="text-muted" href="docs/index.html">Documentation</a>
+				</li>
+				<li class="mb-2">
+					<a class="text-muted" href="https://www.youtube.com/c/erpnext" target="_blank" >YouTube</a>
+				</li>
+				<li class="mb-2">
+					<a class="text-muted" href="https://discuss.erpnext.com/"
+						target="_blank" >Forum</a>
+				</li>
+				<li class="mb-2">
+					<a class="text-muted" href="customer-stories.html">Stories</a>
+				</li>
+				<li class="mb-2">
+						<a class="text-muted" href="security.html">Security</a>
+					</li>
+				<li class="mb-2">
+					<a class="text-muted" href="comparisons.html">Comparisons</a>
+				</li>
+			</ul>
+			
+		</div>
+		<div class="col-sm-3 col-6" style='display: flex; flex-direction: column; justify-content: space-between;'>
+			<div>
+				<h6 class="text-light">About</h6>
+				<ul class="list-unstyled">
+					<li class="mb-2">
+						<a class="text-muted" href="about.html">
+							ERPNext</a>
+					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="https://frappe.io/" target='_blank'>
+							Frappe</a>
+					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="https://frappe.io/about" target='_blank'>
+							Team</a>
+					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="contact.html">
+							Contact</a>
+					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="terms.html">Terms</a>
+					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="privacy.html">Privacy</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h6 class="text-light">Social</h6>
+				<ul class="list-unstyled">
+					<li class="mb-2">
+						<a class="text-muted" href="https://twitter.com/erpnext" target="_blank">Twitter</a>
+					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="https://www.facebook.com/ERPNext/" target="_blank">Facebook</a>
+					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="https://medium.com/frappé-thoughts/" target="_blank">Medium</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+			<div class="py-3 text-muted">
+				<span>&copy; <span id="year"></span> Frappe <span class="mr-2"></span>|<span class="ml-2"></span> <a class="text-muted"href="disclaimer.html" target="_blank">Disclaimer</a> and <a class="text-muted"href="terms.html" target="_blank">Terms of Use</a>.</span>
+			</div>
+	</div>
+</footer>
+<script src="../cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.slim.js"></script>
+
+	<!-- js should be loaded in body! -->
+	<script type="text/javascript" src="assets/frappe/js/lib/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/frappe-web.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap-4-web.min.js"></script>
+	
+<script type="text/javascript" src="assets/frappe_theme/js/frappe_theme.js"></script>
+
+	<script type="text/javascript" src="website_script.js"></script>
+	<script type="text/javascript" src="assets/erpnext_com/js/payment.js"></script>
+	<script type="text/javascript" src="assets/erpnext_com/js/search_docs.js"></script>
+	<script>frappe.csrf_token = "None";</script></body>
+
+<!-- Mirrored from erpnext.com/open-source-accounting by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Sep 2020 19:49:19 GMT -->
 </html>
